@@ -1,24 +1,24 @@
-Bitcoin Core integration/staging tree
+Odan Core integration/staging tree
 =====================================
 
-https://bitcoincore.org
+https://odancore.org
 
-For an immediately usable, binary version of the Bitcoin Core software, see
-https://bitcoincore.org/en/download/.
+For an immediately usable, binary version of the Odan Core software, see
+https://odancore.org/en/download/.
 
-What is Bitcoin Core?
+What is Odan Core?
 ---------------------
 
-Bitcoin Core connects to the Bitcoin peer-to-peer network to download and fully
+Odan Core connects to the Odan peer-to-peer network to download and fully
 validate blocks and transactions. It also includes a wallet and graphical user
 interface, which can be optionally built.
 
-Further information about Bitcoin Core is available in the [doc folder](/doc).
+Further information about Odan Core is available in the [doc folder](/doc).
 
 License
 -------
 
-Bitcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Odan Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
