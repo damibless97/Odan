@@ -141,11 +141,11 @@ public:
         vSeeds.emplace_back("dnsseed.emzy.de."); // Stephan Oeste
         vSeeds.emplace_back("seed.odan.wiz.biz."); // Jason Maurice
 
-        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,0);
-        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,5);
-        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,128);
-        base58Prefixes[EXT_PUBLIC_KEY] = {0x04, 0x88, 0xB2, 0x1E};
-        base58Prefixes[EXT_SECRET_KEY] = {0x04, 0x88, 0xAD, 0xE4};
+        base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,31); // D
+        base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,23);  // A
+        base58Prefixes[SECRET_KEY] =     std::vector<unsigned char>(1,53); // N
+        base58Prefixes[EXT_PUBLIC_KEY] = {0xDE, 0x88, 0xB2, 0xA2};
+        base58Prefixes[EXT_SECRET_KEY] = {0xDE, 0x88, 0xAD, 0xD2};
 
         bech32_hrp = "od";
 
