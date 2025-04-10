@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2022 The Bitcoin Core developers
+// Copyright (c) 2009-2022 The Odan Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -217,7 +217,7 @@ std::optional<CNetAddr> LookupHost(const std::string& name, bool fAllowLookup, D
  * @param name    The string representing a service. Could be a name or a
  *                numerical IP address (IPv6 addresses should be in their
  *                disambiguated bracketed form), optionally followed by a uint16_t port
- *                number. (e.g. example.com:8333 or
+ *                number. (e.g. example.com:3695 or
  *                [2001:db8:85a3:8d3:1319:8a2e:370:7348]:420)
  * @param portDefault The default port for resulting services if not specified
  *                    by the service string.

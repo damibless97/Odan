@@ -3457,7 +3457,7 @@ static void run_inverse_tests(void)
          SECP256K1_FE_CONST(0xb024fdc7, 0x5547451e, 0x426c585f, 0xbd481425, 0x73df6b75, 0xeef6d9d0, 0x389d87d4, 0xfbb440ba)},
         /* Input known to need 566 divsteps starting with delta=1/2. */
         {SECP256K1_FE_CONST(0xb595d81b, 0x2e3c1e2f, 0x482dbc65, 0xe4865af7, 0x9a0a50aa, 0x29f9e618, 0x6f87d7a5, 0x8d1063ae),
-         SECP256K1_FE_CONST(0xc983337c, 0x5d5c74e1, 0x49918330, 0x0b53afb5, 0xa0428a0b, 0xce6eef86, 0x059bd8ef, 0xe5b908de)},
+         SECP256K1_FE_CONST(0xc936957c, 0x5d5c74e1, 0x49918330, 0x0b53afb5, 0xa0428a0b, 0xce6eef86, 0x059bd8ef, 0xe5b908de)},
         /* Set of 10 inputs accessing all 128 entries in the modinv32 divsteps_var table */
         {SECP256K1_FE_CONST(0x00000000, 0x00000000, 0xe0ff1f80, 0x1f000000, 0x00000000, 0x00000000, 0xfeff0100, 0x00000000),
          SECP256K1_FE_CONST(0x9faf9316, 0x77e5049d, 0x0b5e7a1b, 0xef70b893, 0x18c9e30c, 0x045e7fd7, 0x29eddf8c, 0xd62e9e3d)},
@@ -4048,7 +4048,7 @@ static void test_add_neg_y_diff_x(void) {
      * of the sum to be wrong (since infinity has no xy coordinates).
      * HOWEVER, if the x-coordinates are different, infinity is the
      * wrong answer, and such degeneracies are exposed. This is the
-     * root of https://github.com/bitcoin-core/secp256k1/issues/257
+     * root of https://github.com/odan-core/secp256k1/issues/257
      * which this test is a regression test for.
      *
      * These points were generated in sage as
@@ -7494,7 +7494,7 @@ static void run_ecdsa_edge_cases(void) {
 The tests check for known attacks (range checks in (r,s), arithmetic errors, malleability).
 */
 static void test_ecdsa_wycheproof(void) {
-    #include "wycheproof/ecdsa_secp256k1_sha256_bitcoin_test.h"
+    #include "wycheproof/ecdsa_secp256k1_sha256_odan_test.h"
 
     int t;
     for (t = 0; t < SECP256K1_ECDSA_WYCHEPROOF_NUMBER_TESTVECTORS; t++) {

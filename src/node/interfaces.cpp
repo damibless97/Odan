@@ -1,4 +1,4 @@
-// Copyright (c) 2018-2022 The Bitcoin Core developers
+// Copyright (c) 2018-2022 The Odan Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -55,7 +55,7 @@
 #include <validation.h>
 #include <validationinterface.h>
 
-#include <config/bitcoin-config.h> // IWYU pragma: keep
+#include <config/odan-config.h> // IWYU pragma: keep
 
 #include <any>
 #include <memory>
